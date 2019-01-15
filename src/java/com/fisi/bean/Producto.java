@@ -17,6 +17,10 @@ public class Producto {
     private int stock;
     private String estado;
 
+    public Producto() {
+    }
+
+    
     public Producto(long codigo) {
         this.codigo = codigo;
     }

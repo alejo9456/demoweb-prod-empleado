@@ -29,7 +29,7 @@ public class BD {
     
     public static Connection conectar(){
         String URL = "jdbc:oracle:thin:@localhost:1521:XE";
-        String usuario = "venta";
+        String usuario = "webproducto";
         String clave = "123456";
         
         if(!cargarDriver()){

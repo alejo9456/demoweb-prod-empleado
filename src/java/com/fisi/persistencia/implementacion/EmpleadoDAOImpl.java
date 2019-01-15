@@ -6,7 +6,6 @@
 package com.fisi.persistencia.implementacion;
 
 import com.fisi.bean.Empleado;
-import com.fisi.bean.Producto;
 import com.fisi.persistencia.BD;
 import com.fisi.persistencia.interfaces.EmpleadoDAO;
 import java.sql.Connection;
