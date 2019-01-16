@@ -21,12 +21,14 @@
         <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     </head>
     <body>
-              <%
+        
+        <div class="section container">
+                  <%
             ProductoDAO productoDAO =  new ProductoDAOImpl();
             List<Producto> productos = productoDAO.buscarXNombre("");
         %>
-        <h3>Listado de Productos</h3>
-        <table>
+        <h2 class="center black white-text">Listado de Productos</h2>
+        <table class="striped">
             <tr>
                 <th>Código</th>
                 <th>Nombres</th>
@@ -46,6 +48,8 @@
                 <th>  Total: <%=productos.size()%></th>
             </tr>
         </table>  
+        </div>
+        
     </body>
         <!--JavaScript at end of body for optimized loading-->
      <script type="text/javascript" src="js/materialize.js"></script>

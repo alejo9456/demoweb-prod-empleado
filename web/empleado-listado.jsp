@@ -20,12 +20,13 @@
         <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     </head>
     <body>
-        <%
+        <div class="section container">
+            <%
             EmpleadoDAO empleadoDAO =  new EmpleadoDAOImpl();
             List<Empleado> empleados = empleadoDAO.buscarXApellidos("");
         %>
-        <h3>Listado de Empleados</h3>
-        <table>
+        <h2 class="center blue white-text">Listado de Empleados</h2>
+        <table class="striped">
             <tr>
                 <th>Código</th>
                 <th>Nombres</th>
@@ -45,6 +46,8 @@
                 <th>  Total: <%=empleados.size()%></th>
             </tr>
         </table>
+             
+        </div>
         
     </body>
     <!--JavaScript at end of body for optimized loading-->
