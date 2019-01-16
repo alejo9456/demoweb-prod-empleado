@@ -16,7 +16,7 @@ public class BD {
     
     
     private static boolean cargarDriver(){
-        String driver ="oracle.jdbc.OracleDriver";
+        String driver ="com.mysql.jdbc.Driver";
         try {
             Class.forName(driver);
             System.out.println("Exito al cargar el driver ");
@@ -28,9 +28,9 @@ public class BD {
     }
     
     public static Connection conectar(){
-        String URL = "jdbc:oracle:thin:@localhost:1521:XE";
-        String usuario = "webproducto";
-        String clave = "123456";
+        String URL = "jdbc:mysql://localhost:3306/webproductos";
+        String usuario = "root";
+        String clave = "";
         
         if(!cargarDriver()){
             return null;
